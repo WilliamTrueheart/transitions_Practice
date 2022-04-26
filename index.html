@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="album-images/">
+
+</head>
+<body>
+    <div id="mainWrapper">
+        <nav id="topNav">
+            <h2 id="topNavScrollText">welcome one, welcome all</h2>
+        </nav>
+        <div id="uI_1_Wrapper"> <!-- this houses the logo animation -->
+            <div id="brandWrapper">
+                <h1 id="brandLogo" class="brandItems">ss</h1>
+                <h1 id="brandName" class="brandItems">homebase</h1>
+                <h2 id="brandMotto" class="brandItems">passing along great </h2>
+                <h2 id="brandMottoKeyWord" class="brandItemKeyWords"></h2>
+                <h2 id="brandMottoKeyWord_Final">ART</h2>
+            </div>
+        </div>
+        <div id="uI_2_Wrapper"> <!-- this houses the horizontal bars animation -->
+            <div id="uI_2_Wrapper_Box1"></div>
+        </div>
+        <div id="uI_3_Wrapper"> <!-- this houses the featured music component -->
+            <div id="uI_3_Wrapper_Box1">
+                <div id="uI_3_Wrapper_Box1_Title"> <span id="favoritesTitle">featured music</span></div>
+                <div id="uI_3_Wrapper_Box1_Item" class="uI3BoxItems">
+                    <h2 class="songName" id="songName1">Johnny B Goode</h2>
+                    <h3 class="artistName">Chuck Berry</h3>
+                    <a class="featuredLink" href="https://youtu.be/Uf4rxCB4lys" target="blank"></a>
+                </div> 
+                <div id="uI_3_Wrapper_Box2_Item" class="uI3BoxItems">
+                    <h2 class="songName">Fortunate Son</h2>
+                    <h3 class="artistName">CC Revival</h3>
+                    <a class="featuredLink" href="https://youtu.be/ZWijx_AgPiA" target="blank"></a>
+                </div> 
+                <div id="uI_3_Wrapper_Box3_Item" class="uI3BoxItems">
+                    <h2 class="songName">Colorado</h2>
+                    <h3 class="artistName">Flying Burrito Brothers</h3>
+                    <a class="featuredLink" href="https://youtu.be/fzFqpeLZMz4" target="blank"></a>
+                </div> 
+                <div id="uI_3_Wrapper_Box4_Item" class="uI3BoxItems">
+                    <h2 class="songName">Spirit in the Sky</h2>
+                    <h3 class="artistName">Norman Greenbaum</h3>
+                    <a class="featuredLink" href="https://youtu.be/AZQxH_8raCI" target="blank"></a>
+                </div> 
+                <div id="uI_3_Wrapper_Box5_Item" class="uI3BoxItems">
+                    <h2 class="songName songName_XL" >Knocking on Your Screen Door</h2>
+                    <h3 class="artistName">John Prine</h3>
+                    <a class="featuredLink" href="https://youtu.be/aAYoWePzQ2c" target="blank"></a>
+                </div> 
+                <div id="uI_3_Wrapper_Box6_Item" class="uI3BoxItems">
+                    <h2 class="songName songName_L" >Bad, Bad Leeroy Brown</h2>
+                    <h3 class="artistName">Jim Croce</h3>
+                    <a class="featuredLink" href="https://youtu.be/JzYf6qskdfA" target="blank"></a>
+                </div> 
+                <div id="uI_3_Wrapper_Box7_Item" class="uI3BoxItems">
+                    <h2 class="songName songName_">Dream On</h2>
+                    <h3 class="artistName">Aerosmith</h3>
+                    <a class="featuredLink" href="https://youtu.be/cvCFRGn7EEQ" target="blank"></a>
+                </div> 
+                <div id="uI_3_Wrapper_Box8_Item" class="uI3BoxItems">
+                    <h2 class="songName songName_XL">I Can't See Texas From Here</h2>
+                    <h3 class="artistName">George Strait</h3>
+                    <a class="featuredLink" href="https://youtu.be/_TeALUgcRSw" target="blank"></a>
+                </div> 
+            </div>
+        </div>
+        <div id="uI_4_Wrapper"> <!-- this houses the ALL MUSIC component -->
+            <div id="uI_4_AllMusic">
+                <div id="musicFilter_Wrapper">
+                    <input onclick="filterMusic(1)" type="checkbox" name="musicFilter" class='musicFilterBox' id="musicFilters_ShowAll"> <span id="filterTextShowAll" class="musicFilters"><span>//</span> show all</span>
+                    <input onclick="filterMusic(2)" type="checkbox" name="musicFilter" id="musicFilters_Country" class='musicFilterBox'> <span class="musicFilters" id="filterTextCountry" class="musicFilters"><span class="blue" >//</span> country</span>
+                    <input onclick="filterMusic(3)" type="checkbox" name="musicFilter" id="musicFilters_Rock" class="musicFilterBox"> <span class="musicFilters" id="filterTextRock"><span class="red">//</span> rock & <span class='purple'>blues soul</span></span>
+                </div>
+                <div id="uI_4_AllMusic_ItemHousing" >
+                    <div class="musicComponent" id="musicComponent1">
+                        <h4 class="songElement" id="song1"> Chattahoochee </h4>
+                        <h6 class="indicator blue">//</h6>
+                        <h4 class="artistElement" id="artist1"> Alan Jackson </h4>
+                    </div>
+
+                    <div class="musicComponent" id="musicComponent2">
+                        <h4 class="songElement" id="song2"> Mountain Music </h4>
+                        <h6 class="indicator blue">//</h6>
+                        <h4 class="artistElement" id="artist2"> Alabama </h4>
+                    </div>
+
+                    <div class="musicComponent" id="musicComponent3">
+                        <h4 class="songElement" id="song3"> Ain't No Sunshine </h4>
+                        <h6 class="indicator purple">//</h6>
+                        <h4 class="artistElement" id="artist3"> Bill Withers </h4>
+                    </div>
+
+                    <div class="musicComponent" id="musicComponent4">
+                        <h4 class="songElement" id="song4"> Song of the South </h4>
+                        <h6 class="indicator blue">//</h6>
+                        <h4 class="artistElement" id="artist4"> Alabama </h4>
+                    </div> 
+
+                    <div class="musicComponent" id="musicComponent5">
+                        <h4 class="songElement" id="song5"> Kick You When You're Down </h4>
+                        <h6 class="indicator red">//</h6>
+                        <h4 class="artistElement" id="artist5"> ACDC </h4>
+                    </div>
+
+                    <div class="musicComponent" id="musicComponent6">
+                        <h4 class="songElement" id="song6"> Ooh La La </h4>
+                        <h6 class="indicator blue">//</h6>
+                        <h4 class="artistElement" id="artist6"> Faces </h4>
+                    </div>  
+        
+                    <div class="musicComponent" id="musicComponent7">
+                        <h4 class="songElement" id="song7"> Nothing Else Matters </h4>
+                        <h6 class="indicator red">//</h6>
+                        <h4 class="artistElement" id="artist7"> Metallica </h4>
+                    </div>      
+
+                    <div class="musicComponent" id="musicComponent8">
+                        <h4 class="songElement" id="song8"> Folsom City Blue's </h4>
+                        <h6 class="indicator purple">//</h6>
+                        <h4 class="artistElement" id="artist8"> Johnny Cash </h4>
+                    </div> 
+                    <div class="musicComponent" id="musicComponent9">
+                        <h4 class="songElement" id="song9"> Take Me to Texas </h4>
+                        <h6 class="indicator blue">//</h6>
+                        <h4 class="artistElement" id="artist9"> George Strait </h4>
+                    </div> 
+                    <div class="musicComponent" id="musicComponent10">
+                        <h4 class="songElement" id="song10"> It Ain't Over Yet </h4>
+                        <h6 class="indicator purple">//</h6>
+                        <h4 class="artistElement" id="artist19"> Rodney Crowell </h4>
+                    </div> 
+                    <div class="musicComponent" id="musicComponent11">
+                        <h4 class="songElement" id="song11"> And It Stoned Me </h4>
+                        <h6 class="indicator purple">//</h6>
+                        <h4 class="artistElement" id="artist11"> Van Morrison </h4>
+                    </div> 
+                    <div class="musicComponent" id="musicComponent12">
+                        <h4 class="songElement" id="song12"> Time Marches On </h4>
+                        <h6 class="indicator blue">//</h6>
+                        <h4 class="artistElement" id="artist12"> Tracy Lawrence </h4>
+                    </div> 
+                    <div class="musicComponent" id="musicComponent13">
+                        <h4 class="songElement" id="song13"> Trailer That We Call Home </h4>
+                        <h6 class="indicator blue">//</h6>
+                        <h4 class="artistElement" id="artist13"> Whiskey Myers </h4>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

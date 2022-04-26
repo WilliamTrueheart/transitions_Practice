@@ -1,0 +1,646 @@
+* {box-sizing: border-box;}
+body {
+    background-color: rgba(22, 22, 22, 0.98);
+    width:100vw;
+    height: max-content;
+    padding: 0; margin: 0;
+    color:white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#topNav {
+    width:86.1%;
+    height:50px;
+    background-color: #1f4988;
+    border-bottom: solid 10px black;
+    position: fixed;
+    z-index: 9000;
+    overflow: hidden;
+}
+
+#topNavScrollText {
+    font-size: 1rem;
+    opacity: 0;
+    animation: navscroll;
+    animation-iteration-count: 1;
+    animation-duration: 20s;
+    animation-delay: 10s;
+}
+
+#mainWrapper {
+    width: 85%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 1px #1f4988;
+}
+
+#uI_1_Wrapper {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(22, 22, 22);
+    display:flex;
+    justify-content: center;
+    padding-left:4%;
+    box-sizing: border-box;
+}
+
+#brandWrapper {
+    width:250px;
+    height: 200px;
+    position: relative;
+    margin:150px 0 0% 0px;
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#brandWrapper::after {
+    content:'';
+    height:176px;
+    position: relative;
+    left:38%;
+    width: 1px;
+    background-color: rgb(43, 43, 43);
+    animation: keywordappear 4s;
+}
+
+#brandLogo {
+    animation-duration: 3s;
+    top:0px;
+
+}
+#brandLogo::before {
+    content:'(';
+    color:#4e8cdc;
+    position: relative;
+    bottom:2px;
+}
+
+#brandLogo::after {
+    content:')';
+    color:#4e8cdc;
+    position: relative;
+    bottom:2px;
+}
+
+#brandName {
+    animation-duration: 3.2s; 
+    font-size: 3rem;
+    position: absolute;
+    top:16px;
+}
+
+#brandMotto {
+    animation-duration: 3.4s; 
+    font-size: 1rem;
+    position: absolute;
+    top:90px;
+}
+
+.brandItems {
+    position: absolute;
+    width: max-content;
+    animation-name: brandflowin;
+}
+
+.brandItemKeyWords {
+    font-size: .8rem;
+    position: relative;
+    position: absolute;
+    top:122px;
+}
+
+
+#brandMottoKeyWord::before {
+    color:rgba(0, 98, 255, 0);
+    animation: mottoappear 2s 4.8s;
+    content: 'MUSIC';
+    position: absolute;
+    right:0;
+}
+#brandMottoKeyWord::after {
+    color:rgba(0, 98, 255, 0);
+    animation: mottoappear 2s 6.8s;
+    content: 'MOVIES';
+    position: absolute;
+    right:0;
+}
+#brandMottoKeyWord_Final {
+    color:#4e8cdc;
+    width: min-content;
+    font-size: .8rem;
+    animation: keywordappear 10.3s;
+    position: absolute;
+    top:122px;
+}
+
+/* start of UI 2 */
+
+#uI_2_Wrapper {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(22, 22, 22);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right: 10%;
+}
+
+#uI_2_Wrapper_Box1 {
+    position:absolute;
+    background-color: #3e6fae;
+    width:120px;
+    height:200px;
+    animation: growbox1 2.6s;
+    border-radius:6px;
+}
+#uI_2_Wrapper_Box1::before {
+    content:'';
+    position:absolute;
+    background-color: #1f4988;
+    width:120px;
+    height:100px;
+    right:130px;
+    bottom:0;
+    animation: growbox1 2.8s;
+    border-radius:6px;
+}
+#uI_2_Wrapper_Box1::after {
+    content:'';
+    position:absolute;
+    background-color: #4a88c5;
+    width:120px;
+    height:150px;
+    left:130px;
+    bottom:0;
+    animation: growbox1 2.4s;
+    border-radius:6px;
+
+}
+
+/* start of UI 3 */
+
+#uI_3_Wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(22, 22, 22);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+}
+
+#uI_3_Wrapper_Box1 {
+    width:80%;height:240px;
+    background-color: rgba(128, 128, 128, 0.136);
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0px 20px 0px;
+}
+
+#uI_3_Wrapper_Box1_Title {
+    width: 100%;
+    height:40px;
+    background-color: rgb(55, 55, 55);
+    position: absolute;
+    border-radius: 8px 8px 0 0;
+    top:0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right:100px;
+}
+#favoritesTitle {
+    background-color: rgb(22, 22, 22);
+    color:rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 6px 12px 12px 12px;
+    bottom:20px;
+    position: absolute;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom: 2px solid rgb(45, 103, 219);
+}
+
+.uI3BoxItems {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.158), rgba(255, 255, 255, 0.558) 100%);
+    width:8.1vw;
+    height:8.1vw;
+    position: relative;
+    transform: skewY(10deg);
+    opacity: .3;
+    text-align: end;
+    background-size: cover;
+}
+.uI3BoxItems:hover {
+    opacity: 1;
+    animation: musicpullout .5s;
+    animation-fill-mode: forwards;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.featuredLink {
+    position: absolute;
+    width:100%;
+    height:100%;
+    bottom:0px;
+    left:0px;
+}
+
+.songName {
+    width: 100%;
+    position: absolute;
+    bottom:-34px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.songName_XL {
+    bottom:-23px;
+    font-size: .5rem;
+}
+.songName_L {
+    bottom:-28px;
+    font-size: .6rem;
+}
+
+.artistName {
+    width: 100%;
+    position: absolute;
+    bottom:-44px;
+    font-size: .7rem;
+    font-weight: 100;
+}
+
+
+#uI_3_Wrapper_Box1_Item {
+    background-image: url('/album-images/chuckBerry.PNG');
+}
+#uI_3_Wrapper_Box2_Item {
+    background-image: url('/album-images/creedence.PNG');
+}
+#uI_3_Wrapper_Box3_Item {
+    background-image: url('/album-images/flyingBurrito.PNG');
+}
+#uI_3_Wrapper_Box4_Item {
+    background-image: url('/album-images/spiritInTheSky.PNG');
+}
+#uI_3_Wrapper_Box5_Item {
+    background-image: url('/album-images/johnPrine.PNG');
+}
+#uI_3_Wrapper_Box6_Item {
+    background-image: url('/album-images/jimCroce.PNG');
+}
+#uI_3_Wrapper_Box7_Item {
+    background-image: url('/album-images/aerosmith.PNG');
+}
+#uI_3_Wrapper_Box8_Item {
+    background-image: url('/album-images/georgeStrait.PNG');
+}
+
+#uI_4_Wrapper {
+    width:100%;
+    height:min-content;
+    background-color: rgb(22, 22, 22);
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding:30px 0 60px 0;
+}
+#uI_4_Wrapper:after {
+    content:'all music';
+    width:max-content;
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    padding: 6px 12px 12px 12px;
+    top:15px;
+    right:25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border-bottom: 2px solid rgb(45, 103, 219);
+}
+
+
+#uI_4_AllMusic {
+    width:80%;
+    position: relative;
+    height:min-content;
+    background-color: #252525;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding:35px;
+}
+
+.musicFilters {
+    width:max-content;
+    height: 15px;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 3px;
+}
+.musicFilterBox::before {
+    height:13px;
+    width:13px;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px inset white;
+}
+
+/* this took soooo long, ! these are the boxes WHILE NOT selected */
+
+#musicFilters_ShowAll::before {
+    display:flex;
+    content:'';
+    background-color: rgb(254, 254, 254);
+    cursor: pointer;
+}
+
+#musicFilters_Country::before {
+    display:flex;
+    content:'';
+    background-color: #ffffff;
+    cursor: pointer;
+    width:13px; height:13px;
+}
+
+#musicFilters_Rock::before {
+    display:flex;
+    content:'';
+    background-color: #ffffff;
+    cursor: pointer;
+    width:13px; height:13px;
+}
+/* these are the boxes WHILE selected */
+#musicFilters_ShowAll.selected::before {
+    display:flex;
+    background-color: #252525;
+    border: 1px inset rgb(0, 238, 255);
+}
+
+#musicFilters_Country.selected::before {
+    display:flex;
+    background-color: rgb(33, 54, 159);
+    border: 1px inset rgb(0, 238, 255);
+}
+#musicFilters_Rock.selected::before {
+    display:flex;
+    background-color: rgb(159, 33, 33);
+    border: 1px inset rgb(0, 238, 255);
+}
+
+
+
+.red {color:rgb(239, 90, 90); }
+.blue {color:rgb(90, 167, 239); }
+.purple {color:rgb(220, 149, 238); }
+
+#uI_4_AllMusic_ItemHousing {
+    width:100%;
+    height:200px; padding-bottom: 36px;
+    background-image:linear-gradient(to right, rgb(19, 19, 19), rgb(19, 19, 19) 25%, rgb(12, 12, 22) 41%, rgb(19, 19, 19) 55%, rgb(19, 19, 19) 100%);
+    margin-top: 25px;;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: hidden;
+    
+}
+
+.musicComponent {
+    width: max-content;
+    height:20px;
+    display:none; 
+    justify-content: center;
+    position: relative;
+    left:30px;
+    animation:songflowin 2s ;
+}
+
+.songElement {
+    color:rgb(255, 255, 255); 
+    font-size: .9rem;
+    font-weight: 100;
+    display:flex; 
+}
+.artistElement {
+    color:rgb(255, 255, 255); 
+    font-size: .9rem;
+    font-weight: 100;
+    display:flex; 
+}
+
+.indicator {
+    position: relative;
+    top:-19px;
+    font-size: 1rem;
+    padding:0 4px 0 4px;
+}
+
+#musicFilter_Wrapper {
+    display: flex;
+    width:100%;
+    gap:10px;
+    flex-direction: row;
+}
+
+/* start of keyframes */
+
+@keyframes navscroll {
+    0% {
+       position: relative;
+       left:-20%;
+       opacity: 0;
+    }
+    40% {
+        position: relative;
+        left:82%;
+        opacity: 1;
+    }
+
+    100% {
+        position: relative;
+        left:210%;
+        opacity: .5;
+    }
+}
+
+@keyframes brandflowin {
+    from {
+        right:500px;
+        transform: skewY(10deg);
+    }
+    to {
+        right:0;
+        transform: skewY(0deg);
+    }
+}
+
+@keyframes songflowin {
+    from {
+        left:-200px;
+    }
+    to {
+        left:30px;
+    }
+}
+
+@keyframes mottoappear {
+    0% {
+        color:rgba(0, 98, 255, 0);
+        transform:scale(1)
+    }
+    70% {
+        color:#5ba5ef;
+        transform:scale(1.02)
+    }
+    100% {
+        color:rgba(0, 99, 2, 0);
+    }
+}
+
+@keyframes keywordappear {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes keywordappear {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes growbox1 {
+    0% {
+        height:0px;
+    }
+    100% {
+    }
+}
+
+@keyframes musicpullout {
+    0% {
+        left:0px;
+        top:0px;
+        border:1px white inset;
+        background-size: 100%;
+    }
+    100% {
+        left:20px;
+        top:10px;
+        color:rgb(89, 180, 255);
+        border:1px white inset;
+        background-size: 110%;
+    }
+}
+
+
+
+@media (max-width: 950px) {
+    #mainWrapper {
+        width: 90%;
+    }
+    #uI_1_Wrapper {
+        width: 100%;
+    }
+    #uI_2_Wrapper {
+      display: none;
+    }
+    #uI_3_Wrapper {
+        height:min-content;
+    }
+    #uI_3_Wrapper_Box1 {
+        width:80%;height:min-content;
+        gap:2vw;
+        padding: 100px 0 100px 0;
+    }
+    .uI3BoxItems {
+        width:26vw;
+        height:26vw;
+    }
+    #topNav {
+        width:90%;
+    }
+    #uI_4_AllMusic_ItemHousing {
+        width:100%;
+        height:min-content; padding-bottom: 36px;
+        background-color: rgb(22, 22, 22);
+        margin-top: 25px;;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        overflow: hidden;   
+        padding-top: 20px;  
+    }
+    .musicFilters {
+        width:max-content;
+        height: 15px;
+        font-size: .35rem;
+        position: relative;
+        bottom: -19px;
+        right:10px;
+    }
+    .musicFilterBox {
+        height:13px;
+        width:13px;
+        top:12px;
+        position: relative;
+        box-sizing: border-box;
+        border-radius: 2px;
+        border: 1px inset white;
+    }
+    .songElement {
+        color:rgb(255, 255, 255); 
+        font-size: .5rem;
+        font-weight: 100;
+        display:flex; 
+    }
+    .artistElement {
+        color:rgb(255, 255, 255); 
+        font-size: .5rem;
+        font-weight: 100;
+        display:flex; 
+    }
+    
+    .indicator {
+        position: relative;
+        margin-top:24px;
+        font-size: .85rem;
+        padding:0 4px 0 4px;
+    }
+
+}
