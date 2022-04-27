@@ -68,7 +68,7 @@ html, body {
     content:'';
     height:176px;
     position: relative;
-    left:38%;
+    left:16%;
     width: 1px;
     background-color: rgb(43, 43, 43);
     animation: keywordappear 4s;
@@ -582,6 +582,9 @@ html, body {
 
 
 @media (max-width: 950px) {
+    #brandWrapper::after {
+       display:none;
+    }
     #mainWrapper {
         width: 90%;
     }
@@ -621,7 +624,7 @@ html, body {
     .musicFilters {
         width:max-content;
         height: 15px;
-        font-size: .35rem;
+        font-size: .6rem;
         position: relative;
         bottom: -19px;
         right:10px;
@@ -635,24 +638,16 @@ html, body {
         border-radius: 2px;
         border: 1px inset white;
     }
-    .songElement {
-        color:rgb(255, 255, 255); 
-        font-size: .5rem;
-        font-weight: 100;
-        display:flex; 
-    }
-    .artistElement {
-        color:rgb(255, 255, 255); 
-        font-size: .5rem;
-        font-weight: 100;
-        display:flex; 
-    }
-    
-    .indicator {
-        position: relative;
-        margin-top:24px;
-        font-size: .85rem;
-        padding:0 4px 0 4px;
-    }
+ 
 
+}
+@media (max-width: 450px) {
+    .musicFilters {
+        width:max-content;
+        height: 15px;
+        font-size: .25rem;
+        position: relative;
+        bottom: -19px;
+        right:10px;
+    }
 }
