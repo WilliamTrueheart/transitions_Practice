@@ -1,6 +1,6 @@
 * {box-sizing: border-box;}
 body {
-    background-color: rgba(22, 22, 22, 0.98);
+    background-color: rgb(22, 22, 22);
     width:100vw;
     height: max-content;
     padding: 0; margin: 0;
@@ -33,6 +33,8 @@ html, body {
     animation-duration: 20s;
     animation-delay: 10s;
 }
+
+.mainBorders {border: solid rgb(71, 71, 71) 1px;}
 
 #mainWrapper {
     width: 85%;
@@ -68,7 +70,7 @@ html, body {
     content:'';
     height:176px;
     position: relative;
-    left:16%;
+    left:36%;
     width: 1px;
     background-color: rgb(43, 43, 43);
     animation: keywordappear 4s;
@@ -158,6 +160,7 @@ html, body {
     padding-right: 10%;
 }
 
+
 #uI_2_Wrapper_Box1 {
     position:absolute;
     background-color: #3e6fae;
@@ -223,6 +226,7 @@ html, body {
     position: absolute;
     border-radius: 8px 8px 0 0;
     top:0px;
+    left:0;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -486,6 +490,83 @@ html, body {
     flex-direction: row;
 }
 
+/* start of movies (5) */
+
+#uI_5_Wrapper {
+    width:100%;
+    height:400px;
+    background-color:rgb(22, 22, 22);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+#uI_5_Wrapper:after {
+    content:'featured movies';
+    width:max-content;
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    padding: 6px 12px 12px 12px;
+    top:35px;
+    left:25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border-bottom: 2px solid rgb(45, 103, 219);
+}
+
+
+#uI_5_Main {
+    width:80%;
+    height:300px;
+    background-color: rgba(128, 128, 128, 0.136);
+    border-radius: 8px;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding:6% 6% 8% 6%;
+    gap:4%;
+}
+
+.moviePosters {
+    overflow: hidden;
+    width:22%;
+    position: relative;
+    top:15%;
+    height:220px;
+    background-color: #000000;
+    box-shadow: #5ba5ef77 0px 0px 8px 1px;
+}
+
+.moviePoster_Text {
+    background: rgb(31,73,136);
+    background: linear-gradient(90deg, rgba(31,73,136,0.4009978991596639) 0%, rgba(31,73,136,1) 25%, rgba(31,73,136,1) 75%, rgba(31,73,136,0.39539565826330536) 100%);
+    width:110%;
+    right:5%;
+    height: max-content;
+    position: relative;
+    top:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:4px;
+    gap:5px;
+    border-radius: 26px 0px 26px 0px;
+    border:1px solid rgb(51, 90, 163);
+}
+
+.movieName {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.movieDate {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
 /* start of keyframes */
 
 @keyframes navscroll {
@@ -584,7 +665,7 @@ html, body {
         left:20px;
         top:10px;
         color:rgb(89, 180, 255);
-        border:1px white inset;
+        border:1px rgb(66, 138, 219) inset;
         background-size: 110%;
     }
 }
@@ -637,9 +718,22 @@ html, body {
         bottom: 0;
         right:10px;
     }
-  
- 
+    #uI_5_Wrapper {
+        height:max-content;
+    }
+    #uI_5_Main {
+        height:max-content;
+        flex-wrap: wrap;
+        padding-top:120px;
+        padding-bottom:30px;
+        gap:7%;
+    }
 
+    .moviePosters {
+        width:46.4%;
+        height:220px;
+        margin-bottom: 8%;
+    }
 }
 @media (max-width: 700px) {
     .musicFilters {
@@ -665,6 +759,7 @@ html, body {
     font-size: .7rem; 
 }
 }
+
 @media (max-width: 450px) {
     .musicFilters {
         height: min-content;
@@ -689,4 +784,5 @@ html, body {
         font-size: .64rem; 
         bottom:12px;
     }
+
 }
