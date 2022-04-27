@@ -367,7 +367,7 @@ html, body {
     height: 15px;
     font-size: 1.2rem;
     position: relative;
-    bottom: 3px;
+    bottom: 1px;
 }
 .musicFilterBox::before {
     height:13px;
