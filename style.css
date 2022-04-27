@@ -450,7 +450,7 @@ html, body {
 
 .musicComponent {
     width: max-content;
-    height:20px;
+    height:10px;
     display:none; 
     justify-content: center;
     position: relative;
@@ -473,9 +473,9 @@ html, body {
 
 .indicator {
     position: relative;
-    top:-19px;
     font-size: 1rem;
-    padding:0 4px 0 4px;
+    bottom:20px;
+    padding: 0px 4px 0 4px;
 }
 
 #musicFilter_Wrapper {
@@ -670,12 +670,12 @@ html, body {
         width: max-content;
         font-size: .35rem;
         bottom: -2px;
-        right:-1px;
+        right:-2px;
     }
     #musicFilter_Wrapper {
         display: flex;
         width:100%;
-        gap:0px;
+        gap:2px;
         flex-direction: row;
     }
     .songElement {
