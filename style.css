@@ -618,7 +618,7 @@ html, body {
         flex-wrap: wrap;
         align-items: flex-start;
         overflow: hidden;   
-        padding-top: 20px;  
+        padding-top: 25px;  
     }
     .musicFilters {
         font-size: .6rem;
@@ -646,6 +646,16 @@ html, body {
         gap:5px;
         flex-direction: row;
     }
+    
+.songElement {
+    font-size: .45rem; 
+}
+.artistElement {
+    font-size: .45rem; 
+}
+.indicator {
+    font-size: .7rem; 
+}
 }
 @media (max-width: 450px) {
     .musicFilters {
@@ -660,5 +670,14 @@ html, body {
         width:100%;
         gap:0px;
         flex-direction: row;
+    }
+    .songElement {
+        font-size: .35rem; 
+    }
+    .artistElement {
+        font-size: .35rem; 
+    }
+    .indicator {
+        font-size: .64rem; 
     }
 }
