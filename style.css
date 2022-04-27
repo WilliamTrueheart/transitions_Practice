@@ -687,6 +687,6 @@ html, body {
     }
     .indicator {
         font-size: .64rem; 
-
+        bottom:0px;
     }
 }
