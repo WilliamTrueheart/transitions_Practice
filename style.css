@@ -10,6 +10,10 @@ body {
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 #topNav {
     width:86.1%;
@@ -267,27 +271,35 @@ body {
     width: 100%;
     position: absolute;
     bottom:-34px;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 100;
 }
 
-.songName_XL {
-    bottom:-23px;
-    font-size: .5rem;
+.songName_XL  {
+    bottom:-25px;
+   font-size: .4rem;
 }
 .songName_L {
-    bottom:-28px;
-    font-size: .6rem;
+    bottom:-25px;
+   font-size: .5rem;
 }
 
 .artistName {
     width: 100%;
     position: absolute;
-    bottom:-44px;
+    bottom:-45px;
     font-size: .7rem;
     font-weight: 100;
 }
+.artistName_L {
+    bottom:-52px;
+    font-size: .5rem;
+}
 
+.artistName_XL {
+    bottom:-40px;
+    font-size: .5rem;
+}
 
 #uI_3_Wrapper_Box1_Item {
     background-image: url('chuckBerry.PNG');
@@ -417,7 +429,7 @@ body {
 #uI_4_AllMusic_ItemHousing {
     width:100%;
     height:200px; padding-bottom: 36px;
-    background-image:linear-gradient(to right, rgb(19, 19, 19), rgb(19, 19, 19) 25%, rgb(12, 12, 22) 41%, rgb(19, 19, 19) 55%, rgb(19, 19, 19) 100%);
+    background-color: rgb(12,12,12);
     margin-top: 25px;;
     display: flex;
     flex-direction: column;
