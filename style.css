@@ -649,7 +649,7 @@ html, body {
 }
 @media (max-width: 450px) {
     .musicFilters {
-        font-size: .3rem;
+        font-size: .2rem;
         bottom: -23px;
         right:12px;
     }
