@@ -649,14 +649,16 @@ html, body {
 }
 @media (max-width: 450px) {
     .musicFilters {
-        font-size: .2rem;
-        bottom: -23px;
-        right:12px;
+        height: min-content;
+        width: max-content;
+        font-size: .35rem;
+        bottom: -21px;
+        right:0px;
     }
     #musicFilter_Wrapper {
         display: flex;
         width:100%;
-        gap:8px;
+        gap:0px;
         flex-direction: row;
     }
 }
