@@ -435,8 +435,7 @@ html, body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 
 .musicComponent {
@@ -650,8 +649,14 @@ html, body {
 }
 @media (max-width: 450px) {
     .musicFilters {
-        font-size: .25rem;
-        bottom: -24px;
-        right:4px;
+        font-size: .3rem;
+        bottom: -23px;
+        right:12px;
+    }
+    #musicFilter_Wrapper {
+        display: flex;
+        width:100%;
+        gap:8px;
+        flex-direction: row;
     }
 }
