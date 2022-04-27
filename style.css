@@ -446,6 +446,7 @@ html, body {
     flex-wrap: wrap;
     align-items: flex-start;
     overflow: hidden;    
+    gap:10px;
 }
 
 .musicComponent {
@@ -686,5 +687,6 @@ html, body {
     }
     .indicator {
         font-size: .64rem; 
+
     }
 }
