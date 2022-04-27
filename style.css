@@ -670,7 +670,7 @@ html, body {
         width: max-content;
         font-size: .35rem;
         bottom: -2px;
-        right:0px;
+        right:-1px;
     }
     #musicFilter_Wrapper {
         display: flex;
