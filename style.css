@@ -217,6 +217,8 @@ html, body {
     justify-content: center;
     flex-wrap: wrap;
     padding: 30px 0px 20px 0px;
+    animation-name: featuredappear;
+    animation-duration: 3s;
 }
 
 #uI_3_Wrapper_Box1_Title {
@@ -365,6 +367,7 @@ html, body {
     box-sizing: border-box;
     padding:35px;
     transition-duration: 2s;
+
 }
 
 .reveal2{
@@ -373,7 +376,7 @@ html, body {
 
 .reveal2.active{
     opacity: 1;
-  }
+}
 
 .musicFilters {
     width:max-content;
@@ -692,13 +695,11 @@ html, body {
     }
 }
 
-@keyframes keywordappear {
+@keyframes featuredappear {
     0% {
         opacity: 0;
     }
-    80% {
-        opacity: 0;
-    }
+    
     100% {
         opacity: 1;
     }
