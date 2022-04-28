@@ -456,7 +456,7 @@ html, body {
 .musicComponent {
     width: max-content;
     height:10px;
-    display:none; 
+    display:flex; 
     justify-content: center;
     position: relative;
     left:30px;
@@ -508,7 +508,7 @@ html, body {
     background-color: rgb(22, 22, 22);
     position: absolute;
     padding: 6px 12px 12px 12px;
-    top:35px;
+    top:10px;
     left:25%;
     display:flex;
     align-items: center;
@@ -520,21 +520,22 @@ html, body {
 
 #uI_5_Main {
     width:80%;
-    height:300px;
+    height:340px;
     background-color: rgba(128, 128, 128, 0.136);
     border-radius: 8px;
     display:flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     padding:6% 6% 8% 6%;
     gap:4%;
+    flex-wrap: wrap;
 }
 
 .moviePosters {
     overflow: hidden;
-    width:22%;
+    width:160px;
     position: relative;
-    top:15%;
     height:220px;
     background-color: #000000;
     box-shadow: #5ba5ef77 0px 0px 8px 1px;
@@ -566,6 +567,24 @@ html, body {
     font-size: .8rem;
     font-weight: 100;
 }
+
+.moviePosterDesc {
+    position: relative;
+    width:160px;
+    height:220px;
+    background-color: #943131;
+    display:flex;
+    word-wrap: break-word;
+    padding:20px;
+    font-weight: 800;
+    top:15%;
+    display: none;
+}
+
+.moviePosterDescText {
+    font-weight: 100;
+}
+
 
 /* start of keyframes */
 
@@ -669,8 +688,19 @@ html, body {
         background-size: 110%;
     }
 }
+@keyframes selectposter {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
 
-
+@media (max-width: 1350px) {
+    .moviePosterDesc, .moviePosters {
+        width:110px;
+    }
 
 @media (max-width: 950px) {
     #brandWrapper::after {
@@ -719,20 +749,19 @@ html, body {
         right:10px;
     }
     #uI_5_Wrapper {
-        height:max-content;
+        height:840px;    
     }
     #uI_5_Main {
-        height:max-content;
+        height:600px;
         flex-wrap: wrap;
-        padding-top:120px;
-        padding-bottom:30px;
-        gap:7%;
+        gap:4%;
+        align-items: center;
+        margin-bottom:180px;
     }
 
     .moviePosters {
-        width:46.4%;
+        width:120px;
         height:220px;
-        margin-bottom: 8%;
     }
 }
 @media (max-width: 700px) {
@@ -785,4 +814,28 @@ html, body {
         bottom:12px;
     }
 
-}
+    .moviePosters, .moviePosterDesc {
+        width:70px;
+        height:100px;
+    }
+
+    .moviePoster_Text {
+        top:40%;
+    }
+    .movieName, .movieDate{
+        font-size: .4rem;
+    }
+    #uI_5_Wrapper {
+        height:340px;    
+        padding-top: 10px;
+    }
+    #uI_5_Main {
+        height:260px;
+        flex-wrap: wrap;
+        margin-top: 150px;
+        padding-top:30px;
+        gap:4%;
+        align-items: center;
+        
+    }
+}}
