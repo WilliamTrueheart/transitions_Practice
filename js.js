@@ -39,58 +39,58 @@ function filterMusic(num) {
       musicComponent12.style.display = "flex";
       musicComponent13.style.display = "flex";
     
-      showAll.classList.add('selected');
+      showAll.classList.remove('selected');
     }
     if (showAll.checked == true && country.checked == true && rock.checked == false){
       musicComponent1.style.display = "flex";
       musicComponent2.style.display = "flex";
-      musicComponent3.style.display = "flex";
+      musicComponent3.style.display = "none";
       musicComponent4.style.display = "flex";
-      musicComponent5.style.display = "flex";
+      musicComponent5.style.display = "none";
       musicComponent6.style.display = "flex";
-      musicComponent7.style.display = "flex";
-      musicComponent8.style.display = "flex";
+      musicComponent7.style.display = "none";
+      musicComponent8.style.display = "none";
       musicComponent9.style.display = "flex";
-      musicComponent10.style.display = "flex";
-      musicComponent11.style.display = "flex";
+      musicComponent10.style.display = "none";
+      musicComponent11.style.display = "none";
       musicComponent12.style.display = "flex";
       musicComponent13.style.display = "flex";
     
-      showAll.classList.add('selected');
+      showAll.classList.remove('selected');
     }
     if (showAll.checked == true && country.checked == false && rock.checked == true){
-      musicComponent1.style.display = "flex";
-      musicComponent2.style.display = "flex";
+      musicComponent1.style.display = "none";
+      musicComponent2.style.display = "none";
       musicComponent3.style.display = "flex";
-      musicComponent4.style.display = "flex";
+      musicComponent4.style.display = "none";
       musicComponent5.style.display = "flex";
-      musicComponent6.style.display = "flex";
+      musicComponent6.style.display = "none";
       musicComponent7.style.display = "flex";
       musicComponent8.style.display = "flex";
-      musicComponent9.style.display = "flex";
+      musicComponent9.style.display = "none";
       musicComponent10.style.display = "flex";
       musicComponent11.style.display = "flex";
-      musicComponent12.style.display = "flex";
-      musicComponent13.style.display = "flex";
+      musicComponent12.style.display = "none";
+      musicComponent13.style.display = "none";
     
-      showAll.classList.add('selected');
+      showAll.classList.remove('selected');
     }
     if (showAll.checked == true && country.checked == false && rock.checked == false){
-      musicComponent1.style.display = "flex";
-      musicComponent2.style.display = "flex";
-      musicComponent3.style.display = "flex";
-      musicComponent4.style.display = "flex";
-      musicComponent5.style.display = "flex";
-      musicComponent6.style.display = "flex";
-      musicComponent7.style.display = "flex";
-      musicComponent8.style.display = "flex";
-      musicComponent9.style.display = "flex";
-      musicComponent10.style.display = "flex";
-      musicComponent11.style.display = "flex";
-      musicComponent12.style.display = "flex";
-      musicComponent13.style.display = "flex";
+      musicComponent1.style.display = "none";
+      musicComponent2.style.display = "none";
+      musicComponent3.style.display = "none";
+      musicComponent4.style.display = "none";
+      musicComponent5.style.display = "none";
+      musicComponent6.style.display = "none";
+      musicComponent7.style.display = "none";
+      musicComponent8.style.display = "none";
+      musicComponent9.style.display = "none";
+      musicComponent10.style.display = "none";
+      musicComponent11.style.display = "none";
+      musicComponent12.style.display = "none";
+      musicComponent13.style.display = "none";
     
-      showAll.classList.add('selected');
+      showAll.classList.remove('selected');
     }
 
 
@@ -109,58 +109,58 @@ function filterMusic(num) {
       musicComponent12.style.display = "flex";
       musicComponent13.style.display = "flex";
     
-      showAll.classList.remove('selected');
+      showAll.classList.add('selected');
     }
     if (showAll.checked == false && country.checked == false && rock.checked == true){
-      musicComponent1.style.display = "none";
-      musicComponent2.style.display = "none";
+      musicComponent1.style.display = "flex";
+      musicComponent2.style.display = "flex";
       musicComponent3.style.display = "flex";
-      musicComponent4.style.display = "none";
+      musicComponent4.style.display = "flex";
       musicComponent5.style.display = "flex";
-      musicComponent6.style.display = "none";
+      musicComponent6.style.display = "flex";
       musicComponent7.style.display = "flex";
       musicComponent8.style.display = "flex";
-      musicComponent9.style.display = "none";
+      musicComponent9.style.display = "flex";
       musicComponent10.style.display = "flex";
       musicComponent11.style.display = "flex";
-      musicComponent12.style.display = "none";
-      musicComponent13.style.display = "none";
+      musicComponent12.style.display = "flex";
+      musicComponent13.style.display = "flex";
     
-      showAll.classList.remove('selected');
+      showAll.classList.add('selected');
     }
     if (showAll.checked == false && country.checked == true && rock.checked == false){
       musicComponent1.style.display = "flex";
       musicComponent2.style.display = "flex";
-      musicComponent3.style.display = "none";
+      musicComponent3.style.display = "flex";
       musicComponent4.style.display = "flex";
-      musicComponent5.style.display = "none";
+      musicComponent5.style.display = "flex";
       musicComponent6.style.display = "flex";
-      musicComponent7.style.display = "none";
-      musicComponent8.style.display = "none";
+      musicComponent7.style.display = "flex";
+      musicComponent8.style.display = "flex";
       musicComponent9.style.display = "flex";
-      musicComponent10.style.display = "none";
-      musicComponent11.style.display = "none";
+      musicComponent10.style.display = "flex";
+      musicComponent11.style.display = "flex";
       musicComponent12.style.display = "flex";
       musicComponent13.style.display = "flex";
     
-      showAll.classList.remove('selected');
+      showAll.classList.add('selected');
     }
     if (showAll.checked == false && country.checked == false && rock.checked == false){
-      musicComponent1.style.display = "none";
-      musicComponent2.style.display = "none";
-      musicComponent3.style.display = "none";
-      musicComponent4.style.display = "none";
-      musicComponent5.style.display = "none";
-      musicComponent6.style.display = "none";
-      musicComponent7.style.display = "none";
-      musicComponent8.style.display = "none";
-      musicComponent9.style.display = "none";
-      musicComponent10.style.display = "none";
-      musicComponent11.style.display = "none";
-      musicComponent12.style.display = "none";
-      musicComponent13.style.display = "none";
+      musicComponent1.style.display = "flex";
+      musicComponent2.style.display = "flex";
+      musicComponent3.style.display = "flex";
+      musicComponent4.style.display = "flex";
+      musicComponent5.style.display = "flex";
+      musicComponent6.style.display = "flex";
+      musicComponent7.style.display = "flex";
+      musicComponent8.style.display = "flex";
+      musicComponent9.style.display = "flex";
+      musicComponent10.style.display = "flex";
+      musicComponent11.style.display = "flex";
+      musicComponent12.style.display = "flex";
+      musicComponent13.style.display = "flex";
     
-      showAll.classList.remove('selected');
+      showAll.classList.add('selected');
     }
   }
 
@@ -189,51 +189,51 @@ function filterMusic(num) {
       if (showAll.checked == true && country.checked == true && rock.checked == false){
         musicComponent1.style.display = "flex";
         musicComponent2.style.display = "flex";
-        musicComponent3.style.display = "flex";
+        musicComponent3.style.display = "none";
         musicComponent4.style.display = "flex";
-        musicComponent5.style.display = "flex";
+        musicComponent5.style.display = "none";
         musicComponent6.style.display = "flex";
-        musicComponent7.style.display = "flex";
-        musicComponent8.style.display = "flex";
+        musicComponent7.style.display = "none";
+        musicComponent8.style.display = "none";
         musicComponent9.style.display = "flex";
-        musicComponent10.style.display = "flex";
-        musicComponent11.style.display = "flex";
+        musicComponent10.style.display = "none";
+        musicComponent11.style.display = "none";
         musicComponent12.style.display = "flex";
         musicComponent13.style.display = "flex";
       
         country.classList.add('selected');
       }
       if (showAll.checked == true && country.checked == false && rock.checked == true){
-        musicComponent1.style.display = "flex";
-        musicComponent2.style.display = "flex";
+        musicComponent1.style.display = "none";
+        musicComponent2.style.display = "none";
         musicComponent3.style.display = "flex";
-        musicComponent4.style.display = "flex";
+        musicComponent4.style.display = "none";
         musicComponent5.style.display = "flex";
-        musicComponent6.style.display = "flex";
+        musicComponent6.style.display = "none";
         musicComponent7.style.display = "flex";
         musicComponent8.style.display = "flex";
-        musicComponent9.style.display = "flex";
+        musicComponent9.style.display = "none";
         musicComponent10.style.display = "flex";
         musicComponent11.style.display = "flex";
-        musicComponent12.style.display = "flex";
-        musicComponent13.style.display = "flex";
+        musicComponent12.style.display = "none";
+        musicComponent13.style.display = "none";
       
         country.classList.remove('selected');
       }
       if (showAll.checked == true && country.checked == false && rock.checked == false){
-        musicComponent1.style.display = "flex";
-        musicComponent2.style.display = "flex";
-        musicComponent3.style.display = "flex";
-        musicComponent4.style.display = "flex";
-        musicComponent5.style.display = "flex";
-        musicComponent6.style.display = "flex";
-        musicComponent7.style.display = "flex";
-        musicComponent8.style.display = "flex";
-        musicComponent9.style.display = "flex";
-        musicComponent10.style.display = "flex";
-        musicComponent11.style.display = "flex";
-        musicComponent12.style.display = "flex";
-        musicComponent13.style.display = "flex";
+        musicComponent1.style.display = "none";
+        musicComponent2.style.display = "none";
+        musicComponent3.style.display = "none";
+        musicComponent4.style.display = "none";
+        musicComponent5.style.display = "none";
+        musicComponent6.style.display = "none";
+        musicComponent7.style.display = "none";
+        musicComponent8.style.display = "none";
+        musicComponent9.style.display = "none";
+        musicComponent10.style.display = "none";
+        musicComponent11.style.display = "none";
+        musicComponent12.style.display = "none";
+        musicComponent13.style.display = "none";
       
         country.classList.remove('selected');
       }
@@ -254,56 +254,56 @@ function filterMusic(num) {
         musicComponent12.style.display = "flex";
         musicComponent13.style.display = "flex";
       
-        country.classList.remove('selected');
+        country.classList.add('selected');
       }
       if (showAll.checked == false && country.checked == false && rock.checked == true){
-        musicComponent1.style.display = "none";
-        musicComponent2.style.display = "none";
+        musicComponent1.style.display = "flex";
+        musicComponent2.style.display = "flex";
         musicComponent3.style.display = "flex";
-        musicComponent4.style.display = "none";
+        musicComponent4.style.display = "flex";
         musicComponent5.style.display = "flex";
-        musicComponent6.style.display = "none";
+        musicComponent6.style.display = "flex";
         musicComponent7.style.display = "flex";
         musicComponent8.style.display = "flex";
-        musicComponent9.style.display = "none";
+        musicComponent9.style.display = "flex";
         musicComponent10.style.display = "flex";
         musicComponent11.style.display = "flex";
-        musicComponent12.style.display = "none";
-        musicComponent13.style.display = "none";
+        musicComponent12.style.display = "flex";
+        musicComponent13.style.display = "flex";
       
         country.classList.remove('selected');
       }
       if (showAll.checked == false && country.checked == true && rock.checked == false){
         musicComponent1.style.display = "flex";
         musicComponent2.style.display = "flex";
-        musicComponent3.style.display = "none";
+        musicComponent3.style.display = "flex";
         musicComponent4.style.display = "flex";
-        musicComponent5.style.display = "none";
+        musicComponent5.style.display = "flex";
         musicComponent6.style.display = "flex";
-        musicComponent7.style.display = "none";
-        musicComponent8.style.display = "none";
+        musicComponent7.style.display = "flex";
+        musicComponent8.style.display = "flex";
         musicComponent9.style.display = "flex";
-        musicComponent10.style.display = "none";
-        musicComponent11.style.display = "none";
+        musicComponent10.style.display = "flex";
+        musicComponent11.style.display = "flex";
         musicComponent12.style.display = "flex";
         musicComponent13.style.display = "flex";
       
         country.classList.add('selected');
       }
       if (showAll.checked == false && country.checked == false && rock.checked == false){
-        musicComponent1.style.display = "none";
-        musicComponent2.style.display = "none";
-        musicComponent3.style.display = "none";
-        musicComponent4.style.display = "none";
-        musicComponent5.style.display = "none";
-        musicComponent6.style.display = "none";
-        musicComponent7.style.display = "none";
-        musicComponent8.style.display = "none";
-        musicComponent9.style.display = "none";
-        musicComponent10.style.display = "none";
-        musicComponent11.style.display = "none";
-        musicComponent12.style.display = "none";
-        musicComponent13.style.display = "none";
+        musicComponent1.style.display = "flex";
+        musicComponent2.style.display = "flex";
+        musicComponent3.style.display = "flex";
+        musicComponent4.style.display = "flex";
+        musicComponent5.style.display = "flex";
+        musicComponent6.style.display = "flex";
+        musicComponent7.style.display = "flex";
+        musicComponent8.style.display = "flex";
+        musicComponent9.style.display = "flex";
+        musicComponent10.style.display = "flex";
+        musicComponent11.style.display = "flex";
+        musicComponent12.style.display = "flex";
+        musicComponent13.style.display = "flex";
       
         country.classList.remove('selected');
       }
@@ -331,51 +331,51 @@ function filterMusic(num) {
     if (showAll.checked == true && country.checked == true && rock.checked == false){
       musicComponent1.style.display = "flex";
       musicComponent2.style.display = "flex";
-      musicComponent3.style.display = "flex";
+      musicComponent3.style.display = "none";
       musicComponent4.style.display = "flex";
-      musicComponent5.style.display = "flex";
+      musicComponent5.style.display = "none";
       musicComponent6.style.display = "flex";
-      musicComponent7.style.display = "flex";
-      musicComponent8.style.display = "flex";
+      musicComponent7.style.display = "none";
+      musicComponent8.style.display = "none";
       musicComponent9.style.display = "flex";
-      musicComponent10.style.display = "flex";
-      musicComponent11.style.display = "flex";
+      musicComponent10.style.display = "none";
+      musicComponent11.style.display = "none";
       musicComponent12.style.display = "flex";
       musicComponent13.style.display = "flex";
     
       rock.classList.remove('selected');
     }
     if (showAll.checked == true && country.checked == false && rock.checked == true){
-      musicComponent1.style.display = "flex";
-      musicComponent2.style.display = "flex";
+      musicComponent1.style.display = "none";
+      musicComponent2.style.display = "none";
       musicComponent3.style.display = "flex";
-      musicComponent4.style.display = "flex";
+      musicComponent4.style.display = "none";
       musicComponent5.style.display = "flex";
-      musicComponent6.style.display = "flex";
+      musicComponent6.style.display = "none";
       musicComponent7.style.display = "flex";
       musicComponent8.style.display = "flex";
-      musicComponent9.style.display = "flex";
+      musicComponent9.style.display = "none";
       musicComponent10.style.display = "flex";
       musicComponent11.style.display = "flex";
-      musicComponent12.style.display = "flex";
-      musicComponent13.style.display = "flex";
+      musicComponent12.style.display = "none";
+      musicComponent13.style.display = "none";
     
       rock.classList.add('selected');
     }
     if (showAll.checked == true && country.checked == false && rock.checked == false){
-      musicComponent1.style.display = "flex";
-      musicComponent2.style.display = "flex";
-      musicComponent3.style.display = "flex";
-      musicComponent4.style.display = "flex";
-      musicComponent5.style.display = "flex";
-      musicComponent6.style.display = "flex";
-      musicComponent7.style.display = "flex";
-      musicComponent8.style.display = "flex";
-      musicComponent9.style.display = "flex";
-      musicComponent10.style.display = "flex";
-      musicComponent11.style.display = "flex";
-      musicComponent12.style.display = "flex";
-      musicComponent13.style.display = "flex";
+      musicComponent1.style.display = "none";
+      musicComponent2.style.display = "none";
+      musicComponent3.style.display = "none";
+      musicComponent4.style.display = "none";
+      musicComponent5.style.display = "none";
+      musicComponent6.style.display = "none";
+      musicComponent7.style.display = "none";
+      musicComponent8.style.display = "none";
+      musicComponent9.style.display = "none";
+      musicComponent10.style.display = "none";
+      musicComponent11.style.display = "none";
+      musicComponent12.style.display = "none";
+      musicComponent13.style.display = "none";
     
       rock.classList.remove('selected');
     }
@@ -399,55 +399,96 @@ function filterMusic(num) {
       rock.classList.add('selected');
     }
     if (showAll.checked == false && country.checked == false && rock.checked == true){
-      musicComponent1.style.display = "none";
-      musicComponent2.style.display = "none";
+      musicComponent1.style.display = "flex";
+      musicComponent2.style.display = "flex";
       musicComponent3.style.display = "flex";
-      musicComponent4.style.display = "none";
+      musicComponent4.style.display = "flex";
       musicComponent5.style.display = "flex";
-      musicComponent6.style.display = "none";
+      musicComponent6.style.display = "flex";
       musicComponent7.style.display = "flex";
       musicComponent8.style.display = "flex";
-      musicComponent9.style.display = "none";
+      musicComponent9.style.display = "flex";
       musicComponent10.style.display = "flex";
       musicComponent11.style.display = "flex";
-      musicComponent12.style.display = "none";
-      musicComponent13.style.display = "none";
+      musicComponent12.style.display = "flex";
+      musicComponent13.style.display = "flex";
     
       rock.classList.add('selected');
     }
     if (showAll.checked == false && country.checked == true && rock.checked == false){
       musicComponent1.style.display = "flex";
       musicComponent2.style.display = "flex";
-      musicComponent3.style.display = "none";
+      musicComponent3.style.display = "flex";
       musicComponent4.style.display = "flex";
-      musicComponent5.style.display = "none";
+      musicComponent5.style.display = "flex";
       musicComponent6.style.display = "flex";
-      musicComponent7.style.display = "none";
-      musicComponent8.style.display = "none";
+      musicComponent7.style.display = "flex";
+      musicComponent8.style.display = "flex";
       musicComponent9.style.display = "flex";
-      musicComponent10.style.display = "none";
-      musicComponent11.style.display = "none";
+      musicComponent10.style.display = "flex";
+      musicComponent11.style.display = "flex";
       musicComponent12.style.display = "flex";
       musicComponent13.style.display = "flex";
     
       rock.classList.remove('selected');
     }
     if (showAll.checked == false && country.checked == false && rock.checked == false){
-      musicComponent1.style.display = "none";
-      musicComponent2.style.display = "none";
-      musicComponent3.style.display = "none";
-      musicComponent4.style.display = "none";
-      musicComponent5.style.display = "none";
-      musicComponent6.style.display = "none";
-      musicComponent7.style.display = "none";
-      musicComponent8.style.display = "none";
-      musicComponent9.style.display = "none";
-      musicComponent10.style.display = "none";
-      musicComponent11.style.display = "none";
-      musicComponent12.style.display = "none";
-      musicComponent13.style.display = "none";
+      musicComponent1.style.display = "flex";
+      musicComponent2.style.display = "flex";
+      musicComponent3.style.display = "flex";
+      musicComponent4.style.display = "flex";
+      musicComponent5.style.display = "flex";
+      musicComponent6.style.display = "flex";
+      musicComponent7.style.display = "flex";
+      musicComponent8.style.display = "flex";
+      musicComponent9.style.display = "flex";
+      musicComponent10.style.display = "flex";
+      musicComponent11.style.display = "flex";
+      musicComponent12.style.display = "flex";
+      musicComponent13.style.display = "flex";
     
       rock.classList.remove('selected');
     }
   }
+}
+
+
+
+const  selectMoviePoster = (num) => {
+
+    const movieDesc1 = document.getElementById('movieDesc1');
+    const movieDescRevert1 = document.getElementById('movieRevert1');
+    const movieText1 = document.getElementById('moviePoster1_Text');
+
+    switch (num) {
+    case (1):
+      movieDesc1.style.display = 'flex';
+      movieText1.style.display = 'none';
+      movieDescRevert1.style.display = 'flex';
+    break;
+    case (2):
+
+      break;
+    case (3):
+ 
+      break;
+   case (4):
+
+      break;      
   }
+}
+
+
+const  revertMoviePoster = (num) => {
+  const movieDesc1 = document.getElementById('movieDesc1');
+  const movieDescRevert1 = document.getElementById('movieRevert1');
+  const movieText1 = document.getElementById('moviePoster1_Text');
+  
+  switch (num) {
+    case (1):
+      movieDesc1.style.display = 'none';
+      movieText1.style.display = 'flex';
+      movieDescRevert1.style.display = 'none';
+    break;
+}
+}
