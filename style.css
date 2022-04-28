@@ -552,6 +552,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
     padding:4px;
     gap:5px;
     border-radius: 26px 0px 26px 0px;
@@ -568,22 +569,31 @@ html, body {
     font-weight: 100;
 }
 
-.moviePosterDesc {
-    position: relative;
-    width:160px;
-    height:220px;
-    background-color: #943131;
-    display:flex;
-    word-wrap: break-word;
-    padding:20px;
-    font-weight: 800;
-    top:15%;
+.movieDesc {
+    margin:25% 10% 10% 10%;
+    width:80%;
+    height:75%;
+    position: absolute;
     display: none;
 }
 
-.moviePosterDescText {
-    font-weight: 100;
+.movieItemRevert {
+    width:20px; 
+    height:20px;
+    position: absolute;
+    right:5px;
+    top:5px;
+    background-color: rgb(85, 123, 227);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-bottom:5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
+
 
 
 /* start of keyframes */
@@ -688,14 +698,7 @@ html, body {
         background-size: 110%;
     }
 }
-@keyframes selectposter {
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-    }
-}
+
 
 @media (max-width: 1350px) {
     .moviePosterDesc, .moviePosters {
