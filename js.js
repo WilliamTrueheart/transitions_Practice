@@ -455,7 +455,6 @@ function filterMusic(num) {
 
 
 const  selectMoviePoster = (num) => {
-
     const movieDesc1 = document.getElementById('movieDesc1');
     const movieDescRevert1 = document.getElementById('movieRevert1');
     const movieText1 = document.getElementById('moviePoster1_Text');
@@ -479,16 +478,3 @@ const  selectMoviePoster = (num) => {
 }
 
 
-const  revertMoviePoster = (num) => {
-  const movieDesc1 = document.getElementById('movieDesc1');
-  const movieDescRevert1 = document.getElementById('movieRevert1');
-  const movieText1 = document.getElementById('moviePoster1_Text');
-  
-  switch (num) {
-    case (1):
-      movieDesc1.style.display = 'none';
-      movieText1.style.display = 'flex';
-      movieDescRevert1.style.display = 'none';
-    break;
-}
-}

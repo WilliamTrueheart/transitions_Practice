@@ -527,27 +527,55 @@ html, body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding:6% 6% 8% 6%;
+    padding:7% 6% 8% 6%;
     gap:4%;
     flex-wrap: wrap;
+}
+
+#moviePoster1 {
+    background-image: url('thePrestige.PNG');
+    background-size: cover;
+}
+#moviePoster2 {
+    background-image: url('titans.PNG');
+    background-size: cover;
+}
+#moviePoster3 {
+    background-image: url('dumanddummer.PNG');
+    background-size: cover;
+}
+#moviePoster4 {
+    background-image: url('braveheart.PNG');
+    background-size: cover;
 }
 
 .moviePosters {
     overflow: hidden;
     width:160px;
     position: relative;
-    height:220px;
+    height:200px;
     background-color: #000000;
     box-shadow: #5ba5ef77 0px 0px 8px 1px;
+    transform: skewY(-10deg);
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.moviePosters:hover {
+    opacity: 1;
+    box-shadow: #5ba5ef77 0px 0px 16px 1px;
+}
+
 
 .moviePoster_Text {
     background: rgb(31,73,136);
-    background: linear-gradient(90deg, rgba(31,73,136,0.4009978991596639) 0%, rgba(31,73,136,1) 25%, rgba(31,73,136,1) 75%, rgba(31,73,136,0.39539565826330536) 100%);
-    width:110%;
-    right:5%;
-    height: max-content;
-    position: relative;
+    background: linear-gradient(90deg, rgba(31,73,136,0.3009978991596639) 0%, rgba(31, 73, 136, 0.706) 25%, rgba(31,73,136,1) 75%, rgba(31,73,136,0.29539565826330536) 100%);
+    width:100%;
+    height:24%;
+    right:0%;
+    position: absolute;
     top:60%;
     display: flex;
     flex-direction: column;
@@ -555,8 +583,8 @@ html, body {
     box-sizing: border-box;
     padding:4px;
     gap:5px;
-    border-radius: 26px 0px 26px 0px;
-    border:1px solid rgb(51, 90, 163);
+    border-top:2px solid rgb(51, 90, 163);
+    border-bottom:2px solid rgb(51, 90, 163);
 }
 
 .movieName {
@@ -570,27 +598,14 @@ html, body {
 }
 
 .movieDesc {
-    margin:25% 10% 10% 10%;
-    width:80%;
-    height:75%;
+    width:100%;
+    height:100%;
     position: absolute;
     display: none;
+    background-color: #000000d6;
+    padding:20px;
 }
 
-.movieItemRevert {
-    width:20px; 
-    height:20px;
-    position: absolute;
-    right:5px;
-    top:5px;
-    background-color: rgb(85, 123, 227);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    padding-bottom:5px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 
 
@@ -757,14 +772,15 @@ html, body {
     #uI_5_Main {
         height:600px;
         flex-wrap: wrap;
-        gap:4%;
+        gap:8%;
         align-items: center;
+        padding-top:12%;
         margin-bottom:180px;
     }
 
     .moviePosters {
-        width:120px;
-        height:220px;
+        width:40%;
+        height:180px;
     }
 }
 @media (max-width: 700px) {
