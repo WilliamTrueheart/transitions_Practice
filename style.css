@@ -572,7 +572,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 1s;
+    transition-duration: 4s;
 }
 
 .reveal{
@@ -595,6 +595,7 @@ html, body {
 .moviePosters:hover {
     opacity: 1;
     box-shadow: #5ba5ef77 0px 0px 16px 1px;
+    transition-duration: .5s;
 }
 
 
@@ -695,15 +696,6 @@ html, body {
     }
 }
 
-@keyframes featuredappear {
-    0% {
-        opacity: 0;
-    }
-    
-    100% {
-        opacity: 1;
-    }
-}
 
 @keyframes keywordappear {
     0% {
