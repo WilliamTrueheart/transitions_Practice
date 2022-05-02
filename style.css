@@ -308,28 +308,28 @@ html, body {
 }
 
 #uI_3_Wrapper_Box1_Item {
-    background-image: url('chuckBerry.PNG');
+    background-image: url('chuckBerry.jpg');
 }
 #uI_3_Wrapper_Box2_Item {
-    background-image: url('creedence.PNG');
+    background-image: url('creedence.jpg');
 }
 #uI_3_Wrapper_Box3_Item {
-    background-image: url('flyingBurrito.PNG');
+    background-image: url('flyingBurrito.jpg');
 }
 #uI_3_Wrapper_Box4_Item {
-    background-image: url('spiritInTheSky.PNG');
+    background-image: url('spiritInTheSky.jpg');
 }
 #uI_3_Wrapper_Box5_Item {
-    background-image: url('johnPrine.PNG');
+    background-image: url('johnPrine.jpg');
 }
 #uI_3_Wrapper_Box6_Item {
-    background-image: url('jimCroce.PNG');
+    background-image: url('jimCroce.jpg');
 }
 #uI_3_Wrapper_Box7_Item {
-    background-image: url('aerosmith.PNG');
+    background-image: url('aerosmith.jpg');
 }
 #uI_3_Wrapper_Box8_Item {
-    background-image: url('georgeStrait.PNG');
+    background-image: url('georgeStrait.jpg');
 }
 
 #uI_4_Wrapper {
@@ -547,19 +547,19 @@ html, body {
 }
 
 #moviePoster1 {
-    background-image: url('thePrestige.PNG');
+    background-image: url('thePrestige.jpg');
     background-size: cover;
 }
 #moviePoster2 {
-    background-image: url('titans.PNG');
+    background-image: url('titans.jpg');
     background-size: cover;
 }
 #moviePoster3 {
-    background-image: url('dumanddummer.PNG');
+    background-image: url('dumanddummer.jpg');
     background-size: cover;
 }
 #moviePoster4 {
-    background-image: url('braveheart.PNG');
+    background-image: url('braveheart.jpg');
     background-size: cover;
 }
 
